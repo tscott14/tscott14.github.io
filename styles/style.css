@@ -1,0 +1,20 @@
+:root {
+  --profile-width: 400px;
+  --profile-height: 400px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #AA3333;
+}
+
+.placeholder-img {
+  width: 99%;
+}
