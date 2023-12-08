@@ -1,6 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+
 :root {
-  --profile-width: 400px;
-  --profile-height: 400px;
+  --profile-width: 450px;
+  --profile-height: 450px;
+
+  --accent-1: 217, 38, 50;
+  --accent-2: 163, 214, 199;
+  --accent-3: 8, 120, 135;
+  --accent-4: 90, 59, 145;
+
+  --transition-height: 100px;
 }
 
 *,
@@ -11,10 +22,43 @@
   margin: 0;
 }
 
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.font-titillium-web {
+  font-family: "Titillium Web";
+}
+
+.font-roboto-slab {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.trans-top {
+  position: absolute;
+  background-image: url("../assets/trans2.png");
+  width: 100vw;
+  height: var(--transition-height);
+}
+
+.trans-bottom {
+  position: absolute;
+  transform: translateY(-100%);
+  background-image: url("../assets/trans1.png");
+  width: 100vw;
+  height: var(--transition-height);
+}
+
+.section-header {
+  font-size: 3.5rem;
+}
+
+/* Temp blocks */
 body {
-  background-color: #1e1e1e;
+  height: 10000vh;
 }
 
 .placeholder-img {
-  width: 60%;
+  position: static;
 }
+
