@@ -41,13 +41,25 @@
   height: var(--transition-height);
 }
 
-.trans-bottom {
+.page-transition {
   position: absolute;
   transform: translateY(-100%);
-  background-image: url("../assets/trans1.png");
+  background-color: white;
+  
   width: 100vw;
   height: var(--transition-height);
+
+  -webkit-mask-image: url("../assets/trans1.png");
+  mask-image: var("../assets/trans1.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
+
+.flip-img {
+  transform: scale(1, -1);
+} 
 
 .section-header {
   font-size: 3.5rem;
@@ -61,4 +73,3 @@ body {
 .placeholder-img {
   position: static;
 }
-
