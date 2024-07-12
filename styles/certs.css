@@ -1,0 +1,31 @@
+section.certs {
+    /* display: none; */
+
+    background-color: rgb(var(--accent-4));
+    color: white;
+    
+}
+
+section.certs > h1 {
+    text-align: center;
+    line-height: 8rem;
+}
+
+section.certs > ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    list-style: none;
+}
+
+section.certs li {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.75rem;
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section.certs img {
+    width: 200px;
+}

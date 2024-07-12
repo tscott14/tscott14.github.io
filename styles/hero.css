@@ -1,0 +1,65 @@
+section.hero {
+  background: linear-gradient(
+      rgba(var(--accent-3), 0.95),
+      rgba(var(--accent-3), 0.5)
+    ),
+    url("../assets/hero-bg.jpg") center/cover;
+
+  color: white;
+
+  padding-bottom: 100px;
+}
+
+section.hero .hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 70vh;
+}
+
+/* section.hero > * {} */
+
+section.hero .hero-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  height: 50%;
+}
+
+section.hero .profile-mask {
+  --mask-url: url("../assets/profile-cutout.svg");
+  --mask-size: var(--profile-width);
+
+  -webkit-mask-image: var(--mask-url);
+  mask-image: var(--mask-url);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: var(--mask-size);
+  mask-size: var(--mask-size);
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+section.hero img {
+  width: var(--profile-width);
+  height: var(--profile-height);
+}
+
+section.hero h1 {
+  font-size: 3rem;
+}
+
+section.hero h2 {
+  font-size: 1.25rem;
+}
+
+section.hero a.aboutme {
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(var(--accent-1));
+}

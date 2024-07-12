@@ -1,0 +1,28 @@
+.aboutme,
+.aboutme-ext {
+  background-color: white;
+}
+
+.aboutme > .container,
+.aboutme-ext > .container {
+  max-width: 1080px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.aboutme p,
+.aboutme-ext p {
+  margin: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.aboutme-ext {
+  background-color: #d9d9d9;
+}
+
+/* This is purely for allowing the transition to fit properly */
+.aboutme-ext > .container {
+  padding: var(--transition-height) 0;
+}

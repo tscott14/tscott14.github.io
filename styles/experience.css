@@ -1,0 +1,49 @@
+section.experience {
+  background-color: rgb(var(--accent-5));
+  color: white;
+  text-align: center;
+  padding: 6rem 0 2rem 0;
+}
+
+section.experience > h1 {
+  line-height: 8rem;
+}
+
+section.experience > ul {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 4rem;
+  list-style: none;
+}
+
+section.experience > ul > li {
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  min-width: 350px;
+}
+
+section.experience > ul > li .header {
+  margin: 1rem;
+}
+
+section.experience > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.experience > ul > li > ul p {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+section.experience > ul > li > ul p.job {
+    background-color: rgb(var(--accent-1));
+}
+
+section.experience > ul > li > ul p.skill {
+    background-color: rgb(var(--accent-3));
+}
